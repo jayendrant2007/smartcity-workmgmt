@@ -1,4 +1,10 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './AppContent.jsx'; // or wherever your main component is
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
 const API = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
 export default function App() {
