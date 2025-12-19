@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './AppContent.jsx'; // or wherever your main component is
+import App from './App.jsx'; // or wherever your main component is
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
+const API = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+
+export default function App() {
+  return (
+    <div style={{ padding: 20, fontFamily: 'Arial, sans-serif' }}>
+      <h1>SMART CITY TECHNOLOGIES PTE LTD</h1>
+      <p>Work Management: Card Access, CCTV, Intercom, Biometrics, ANPR, Barrier systems, others</p>
+      {/* Your tabs and components go here */}
+    </div>
+  );
+}
 
 function Tabs() {
   const [tab, setTab] = useState('new');
