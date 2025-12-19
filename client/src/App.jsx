@@ -12,10 +12,11 @@ export default function App() {
     <div style={{ padding: 20, fontFamily: 'Arial, sans-serif' }}>
       <h1>SMART CITY TECHNOLOGIES PTE LTD</h1>
       <p>Work Management: Card Access, CCTV, Intercom, Biometrics, ANPR, Barrier systems, others</p>
-      <Tabs />
+      {/* Jay*/}
     </div>
   );
 }
+
 
 function Tabs() {
   const [tab, setTab] = useState('new');
